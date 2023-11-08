@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url('https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js');
+
+main {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+.title {
+  margin-top: 15px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.7rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: white;
+  text-decoration: none;
+}
+
+/* Start video section */
+
+.player {
+  margin: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 80%;
+  height: 40%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30rem;
+  object-fit: cover;
+  align-content: center;
+}
+
+.song {
+  padding-top: 400px;
+  font-size: 4rem;
+  color: black;
+  z-index: 1;
+}
+.left {
+  font-size: 4rem;
+  color: rgba(25, 163, 218, 0.839);
+  z-index: 1;
+}
+.left:hover {
+  color: rgb(4, 102, 159);
+  text-shadow: 5px -1px 6px #32a0ec;
+  font-size: 4.1rem;
+}
+.right {
+  font-size: 4rem;
+  color: rgba(25, 163, 218, 0.838);
+  z-index: 1;
+}
+.right:hover {
+  color: rgb(4, 102, 159);
+  font-size: 4.1rem;
+}
+.play-pause {
+  font-size: 4rem;
+  color: rgba(25, 163, 218, 0.838);
+  z-index: 1;
+}
+.play-pause:hover {
+  color: rgb(4, 102, 159);
+  font-size: 4.1rem;
+}
+
+
+.video video {
+  margin: 0;
+  width: 100%;
+  height: 85%;
+  position: fixed;
+  transform: translate( -50%, -50% );
+  top: 50%;
+  left: 50%;
+  /* background-size */
+
+  object-position: center center;
+  /* background-position */
+}
+
+.video::after {
+  
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+/* End video section */

@@ -1,7 +1,7 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text } from 'react-native'
 import React from 'react'
 
-const About = () => {
+const Gaya = () => {
   return (
     <View
       style={{
@@ -9,13 +9,12 @@ const About = () => {
         flex: 1,
         alignItems: "center",
         justifyContent: "center",
-        backgroundColor: "red",
+        backgroundColor: "blue",
       }}
     >
-      <Text>About</Text>
+      <Text>Gaya</Text>
     </View>
   );
 }
 
-export default About
-
+export default Gaya

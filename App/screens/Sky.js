@@ -1,21 +1,20 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text } from 'react-native'
 import React from 'react'
 
-const About = () => {
+const Sky = () => {
   return (
     <View
       style={{
-        fontSize: 30,
         flex: 1,
+        fontSize: 30,
         alignItems: "center",
         justifyContent: "center",
-        backgroundColor: "red",
+        backgroundColor: "green",
       }}
     >
-      <Text>About</Text>
+      <Text>Sky</Text>
     </View>
   );
 }
 
-export default About
-
+export default Sky              

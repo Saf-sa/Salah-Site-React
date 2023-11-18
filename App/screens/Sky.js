@@ -1,7 +1,7 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const Sky = () => {
+const Sky = ()=>  {
   return (
     <View
       style={{

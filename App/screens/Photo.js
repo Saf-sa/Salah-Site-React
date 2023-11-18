@@ -16,5 +16,4 @@ const Photo = () => {
     </View>
   );
 };
-
-export default Photo;
+export default Photo

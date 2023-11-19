@@ -1,7 +1,7 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const human = () => {
+const Human = () => {
   return (
     <View
       style={{
@@ -12,8 +12,8 @@ const human = () => {
         backgroundColor: "green",
       }}
     >
-      <Text>Photo human</Text>
+      <Text>Photo Human</Text>
     </View>
 )}
 
-export default human
+export default Human

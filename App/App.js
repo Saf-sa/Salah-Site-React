@@ -9,6 +9,12 @@ import About from "./screens/About";
 import Piano from "./screens/Piano";
 import Film from "./screens/Film";
 import Photo from "./screens/Photo";
+import Music from "./screens/Music";
+import Sport from "./screens/Sport";
+import Gaya from "./screens/Gaya";
+import Sky from "./screens/Sky";
+import Human from "./screens/Human";
+import Town from "./screens/Town";
 import Model from "./screens/Model";
 import Contact from "./screens/Contact";
 
@@ -42,6 +48,38 @@ export default function App() {
         <Stack.Screen
           name="Photo"
           component={Photo}
+          options={{ headerShown: true }}
+        />
+
+        <Stack.Screen
+          name="Music"
+          component={Music}
+          options={{ headerShown: true }}
+        />
+
+        <Stack.Screen
+          name="Sport"
+          component={Sport}
+          options={{ headerShown: true }}
+        />
+        <Stack.Screen
+          name="Gaya"
+          component={Gaya}
+          options={{ headerShown: true }}
+        />
+        <Stack.Screen
+          name="Sky"
+          component={Sky}
+          options={{ headerShown: true }}
+        />
+        <Stack.Screen
+          name="Human"
+          component={Human}
+          options={{ headerShown: true }}
+        />
+        <Stack.Screen
+          name="Town"
+          component={Town}
           options={{ headerShown: true }}
         />
 

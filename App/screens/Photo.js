@@ -1,53 +1,56 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, Button } from "react-native";
-import { createStackNavigator } from "@react-navigation/stack";
-import { NavigationContainer } from "@react-navigation/native";
-import { Navigation } from "@react-navigation/native";
+import { View, Button, Image } from 'react-native'
+import React from 'react'
 
-import Music from "./Music";
-import Sport from "./Sport";
-import Gaya from "./Gaya";
-import Sky from "./Sky";
-import Human from "./Human";
-import Town from "./Town";
+
 
 const Photo = ({ navigation }) => {
   return (
     <View
       style={{
         fontSize: 30,
+        flex: 1,
         alignItems: "center",
         justifyContent: "center",
-        flex: 1,
-
-        backgroundColor: "lightblue ",
+        backgroundColor: "lightblue",
       }}
     >
-      <Text>Photo Gallery</Text>
-
-      <Button
-        title=" Music"
-        onPress={() => navigation.navigate("Music")}
+  
+      <Button title="Go to Music" onPress={() => navigation.navigate("Music")} />
+      <Image
+        source={{ uri: "url_to_your_image" }}
+        style={{ width: 50, height: 50 }}
       />
       <Button
-        title=" Sport"
+        title="Go to Sport"
         onPress={() => navigation.navigate("Sport")}
       />
-      <Button 
-      title=" Gaya" 
-      onPress={() => navigation.navigate("Gaya")}
-       />
-      <Button 
-      title="Sky"
-       onPress={() => navigation.navigate("Sky")} 
-       />
-      <Button
-        title=" Human"
-        onPress={() => navigation.navigate("Human")}
+      <Image
+        source={{ uri: "url_to_your_image" }}
+        style={{ width: 50, height: 50 }}
+      />
+      <Button title="Go to Gaya" onPress={() => navigation.navigate("Gaya")} />
+      <Image
+        source={{ uri: "url_to_your_image" }}
+        style={{ width: 50, height: 50 }}
+      />
+      <Button title="Go to Sky" onPress={() => navigation.navigate("Sky")} />
+      <Image
+        source={{ uri: "url_to_your_image" }}
+        style={{ width: 50, height: 50 }}
       />
       <Button
-       title=" Town" 
-       onPress={() => navigation.navigate("Town")} />
+        title="Go to Human"
+        onPress={() => navigation.navigate("Human")}
+      />
+      <Image
+        source={{ uri: "url_to_your_image" }}
+        style={{ width: 50, height: 50 }}
+      />
+      <Button title="Go to Town" onPress={() => navigation.navigate("Town")} />
+      <Image
+        source={{ uri: "url_to_your_image" }}
+        style={{ width: 50, height: 50 }}
+      />
     </View>
   );
 };

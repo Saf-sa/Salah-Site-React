@@ -8,7 +8,7 @@ import Home from "./screens/Home";
 import About from "./screens/About";
 import Piano from "./screens/Piano";
 import Film from "./screens/Film";
-import Photo from "./screens/Photography";
+import Photo from "./screens/Photo";
 import Model from "./screens/Model";
 import Contact from "./screens/Contact";
 
@@ -41,20 +41,12 @@ export default function App() {
         />
         <Stack.Screen
           name="Photo"
-          component={Photogtraphy}
+          component={Photo}
           options={{ headerShown: true }}
         />
-       
-        <Stack.Screen
-          name="Model"
-          component={Model}
-         
-        />
-        <Stack.Screen
-          name="Contact"
-          component={Contact}
-       
-        />
+
+        <Stack.Screen name="Model" component={Model} />
+        <Stack.Screen name="Contact" component={Contact} />
       </Stack.Navigator>
     </NavigationContainer>
   );

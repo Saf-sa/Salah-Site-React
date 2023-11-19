@@ -14,39 +14,47 @@ const Photo = ({ navigation }) => {
         backgroundColor: "lightblue",
       }}
     >
-  
-      <Button title="Go to Music" onPress={() => navigation.navigate("Music")} />
+      <Button
+        title=" Music Gallery"
+        onPress={() => navigation.navigate("Music")}
+      />
       <Image
         source={{ uri: "url_to_your_image" }}
         style={{ width: 50, height: 50 }}
       />
       <Button
-        title="Go to Sport"
+        title="Sport Gallery"
         onPress={() => navigation.navigate("Sport")}
       />
       <Image
         source={{ uri: "url_to_your_image" }}
         style={{ width: 50, height: 50 }}
       />
-      <Button title="Go to Gaya" onPress={() => navigation.navigate("Gaya")} />
+      <Button
+        title="Gaya Gallery"
+        onPress={() => navigation.navigate("Gaya")}
+      />
       <Image
         source={{ uri: "url_to_your_image" }}
         style={{ width: 50, height: 50 }}
       />
-      <Button title="Go to Sky" onPress={() => navigation.navigate("Sky")} />
+      <Button title="Sky Gallery" onPress={() => navigation.navigate("Sky")} />
       <Image
         source={{ uri: "url_to_your_image" }}
         style={{ width: 50, height: 50 }}
       />
       <Button
-        title="Go to Human"
+        title="Human Gallery"
         onPress={() => navigation.navigate("Human")}
       />
       <Image
         source={{ uri: "url_to_your_image" }}
         style={{ width: 50, height: 50 }}
       />
-      <Button title="Go to Town" onPress={() => navigation.navigate("Town")} />
+      <Button
+        title="Town Gallery"
+        onPress={() => navigation.navigate("Town")}
+      />
       <Image
         source={{ uri: "url_to_your_image" }}
         style={{ width: 50, height: 50 }}

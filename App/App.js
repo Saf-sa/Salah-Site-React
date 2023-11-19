@@ -1,40 +1,61 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View, Button } from "react-native";
 import { createStackNavigator } from "@react-navigation/stack";
+import { NavigationContainer } from "@react-navigation/native";
+import { Navigation } from "@react-navigation/native";
+import React from "react";
+import Home from "./screens/Home";
+import About from "./screens/About";
+import Piano from "./screens/Piano";
+import Film from "./screens/Film";
+import Photo from "./screens/Photography";
+import Model from "./screens/Model";
+import Contact from "./screens/Contact";
 
 const Stack = createStackNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-
+    <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="About" component={About} />
-        <Stack.Screen name="Music" component={Music} />
-        <Stack.Screen name="Film" component={Film} />
-        <Stack.Screen name="Photo" component={Photo} />
-        <Stack.Screen name="Photo" component={Photo} />
-        <Stack.Screen name="Photo Music" component={Photomusic} />
-        <Stack.Screen name="Photo Sport" component={Photosport} />
-        <Stack.Screen name="Photo Gaya" component={Photogaya} />
-        <Stack.Screen name="Photo human" component={Photohuman} />
-        <Stack.Screen name="Photo sky" component={Photosky} />
-        <Stack.Screen name="Photo town" component={Phototown} />
-        <Stack.Screen name="Model" component={Model} />
-        <Stack.Screen name="Contact" component={Contact} />
+        <Stack.Screen
+          name="Home"
+          component={Home}
+          options={{ headerShown: true }}
+        />
+
+        <Stack.Screen
+          name="About"
+          component={About}
+          options={{ headerShown: true }}
+        />
+        <Stack.Screen
+          name="Piano"
+          component={Piano}
+          options={{ headerShown: true }}
+        />
+        <Stack.Screen
+          name="Film"
+          component={Film}
+          options={{ headerShown: true }}
+        />
+        <Stack.Screen
+          name="Photo"
+          component={Photogtraphy}
+          options={{ headerShown: true }}
+        />
+       
+        <Stack.Screen
+          name="Model"
+          component={Model}
+         
+        />
+        <Stack.Screen
+          name="Contact"
+          component={Contact}
+       
+        />
       </Stack.Navigator>
-    </View>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

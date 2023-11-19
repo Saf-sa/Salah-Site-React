@@ -4,3 +4,5 @@
 - npm run android
 - android
 - npm run web
+
+3 

@@ -2,6 +2,7 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, Button } from "react-native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
+import { createDrawerNavigator } from "@react-navigation/drawer";
 import { Navigation } from "@react-navigation/native";
 import React from "react";
 import Home from "./screens/Home";
@@ -18,74 +19,26 @@ import Town from "./screens/Town";
 import Model from "./screens/Model";
 import Contact from "./screens/Contact";
 
-const Stack = createStackNavigator();
+const Drawer = createDrawerNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen
-          name="Home"
-          component={Home}
-          options={{ headerShown: true }}
-        />
-
-        <Stack.Screen
-          name="About"
-          component={About}
-          options={{ headerShown: true }}
-        />
-        <Stack.Screen
-          name="Piano"
-          component={Piano}
-          options={{ headerShown: true }}
-        />
-        <Stack.Screen
-          name="Film"
-          component={Film}
-          options={{ headerShown: true }}
-        />
-        <Stack.Screen
-          name="Photo"
-          component={Photo}
-          options={{ headerShown: true }}
-        />
-
-        <Stack.Screen
-          name="Music"
-          component={Music}
-          options={{ headerShown: true }}
-        />
-
-        <Stack.Screen
-          name="Sport"
-          component={Sport}
-          options={{ headerShown: true }}
-        />
-        <Stack.Screen
-          name="Gaya"
-          component={Gaya}
-          options={{ headerShown: true }}
-        />
-        <Stack.Screen
-          name="Sky"
-          component={Sky}
-          options={{ headerShown: true }}
-        />
-        <Stack.Screen
-          name="Human"
-          component={Human}
-          options={{ headerShown: true }}
-        />
-        <Stack.Screen
-          name="Town"
-          component={Town}
-          options={{ headerShown: true }}
-        />
-
-        <Stack.Screen name="Model" component={Model} />
-        <Stack.Screen name="Contact" component={Contact} />
-      </Stack.Navigator>
+      <Drawer.Navigator initialRouteName="Home">
+        <Drawer.Screen name="Home" component={Home} />
+        <Drawer.Screen name="About" component={About} />
+        <Drawer.Screen name="Piano" component={Piano} />
+        <Drawer.Screen name="Film" component={Film} />
+        <Drawer.Screen name="Photo" component={Photo} />
+        <Drawer.Screen name="Music" component={Music} />
+        <Drawer.Screen name="Sport" component={Sport} />
+        <Drawer.Screen name="Gaya" component={Gaya} />
+        <Drawer.Screen name="Sky" component={Sky} />
+        <Drawer.Screen name="Human" component={Human} />
+        <Drawer.Screen name="Town" component={Town} />
+        <Drawer.Screen name="Model" component={Model} />
+        <Drawer.Screen name="Contact" component={Contact} />
+      </Drawer.Navigator>
     </NavigationContainer>
   );
 }

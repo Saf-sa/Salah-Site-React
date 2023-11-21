@@ -29,3 +29,7 @@ npm install @react-navigation/stack
 
 npx expo install react-native-gesture-handler
 
+8- install react native drawer
+
+npm install @react-navigation/drawer
+

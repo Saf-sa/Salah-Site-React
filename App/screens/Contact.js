@@ -18,6 +18,7 @@ const Contact = () => {
 }
 
 export default Contact
+
 const styles = StyleSheet.create({
   title: {
     fontSize: 30,

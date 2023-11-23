@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native'
+import { View, Text, StyleSheet } from "react-native";
 import React from 'react'
 
 const Model = () => {
@@ -9,12 +9,19 @@ const Model = () => {
         fontSize: 30,
         alignItems: "center",
         justifyContent: "center",
-        backgroundColor: "green",
+        backgroundColor: "black",
       }}
     >
-      <Text>Model</Text>
+      <Text style={styles.title}>Model Screen</Text>
     </View>
   );
 }
 
 export default Model
+
+const styles = StyleSheet.create({
+  title: {
+    fontSize: 30,
+    color: "white",
+  },
+});

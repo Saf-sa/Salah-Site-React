@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native'
+import { View, Text, StyleSheet } from "react-native";
 import React from 'react'
 
 const Piano = () => {
@@ -9,12 +9,19 @@ const Piano = () => {
         fontSize: 30,
         alignItems: "center",
         justifyContent: "center",
-        backgroundColor: "pink",
+        backgroundColor: "black",
       }}
     >
-      <Text>Piano</Text>
+      <Text style={styles.title}>Piano Screen</Text>
     </View>
   );
 }
 
 export default Piano
+
+const styles = StyleSheet.create({
+  title: {
+    fontSize: 30,
+    color: "white",
+  },
+});

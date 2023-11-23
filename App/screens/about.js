@@ -12,10 +12,16 @@ const About = () => {
         backgroundColor: "red",
       }}
     >
-      <Text>About</Text>
+      <Text style={styles.title}>About Screen</Text>
     </View>
   );
 }
 
 export default About
 
+const styles = StyleSheet.create({
+  title: {
+    fontSize: 30,
+    color: "white",
+  },
+});

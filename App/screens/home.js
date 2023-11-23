@@ -14,20 +14,20 @@ const Home = () => {
         alignItems: "center",
         justifyContent: "center",
         backgroundColor: "blue",
+        fontSize: 30,
       }}
     >
-      <Text>Home Screen</Text>
-      <Button title="Home" onPress={() => navigation.navigate("Home")} />
-      <Button title="About" onPress={() => navigation.navigate("About")} />
-      <Button title="Piano" onPress={() => navigation.navigate("Piano")} />
-      <Button title="Film" onPress={() => navigation.navigate("Film")} />
-      <Button title="Photo" onPress={() => navigation.navigate("Photo")} />
-      <Button title="Model" onPress={() => navigation.navigate("Model")} />
-      <Button title="Contact" onPress={() => navigation.navigate("Contact")} />
-
-    
+      <Text style={styles.title}>Home Screen</Text>
     </View>
   );
 };
 
 export default Home;
+
+const styles = StyleSheet.create({
+  title: {
+    fontSize: 30,
+    color: "white",
+
+  },
+});

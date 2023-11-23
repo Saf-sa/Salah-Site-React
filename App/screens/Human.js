@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native'
+import { View, Text, StyleSheet } from "react-native";
 import React from 'react'
 
 const Human = () => {
@@ -12,8 +12,15 @@ const Human = () => {
         backgroundColor: "green",
       }}
     >
-      <Text>Photo Human</Text>
+      <Text style={styles.title}>Human Screen</Text>
     </View>
-)}
+  );}
 
 export default Human
+
+const styles = StyleSheet.create({
+  title: {
+    fontSize: 30,
+    color: "white",
+  },
+});

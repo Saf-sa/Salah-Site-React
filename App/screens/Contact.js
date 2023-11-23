@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native'
+import { View, Text, StyleSheet } from "react-native";
 import React from 'react'
 
 const Contact = () => {
@@ -12,9 +12,15 @@ const Contact = () => {
         backgroundColor: "green",
       }}
     >
-      <Text>Contact</Text>
+      <Text style={styles.title}>Contact Screen</Text>
     </View>
   );
 }
 
 export default Contact
+const styles = StyleSheet.create({
+  title: {
+    fontSize: 30,
+    color: "white",
+  },
+});

@@ -18,7 +18,8 @@ import Human from "./screens/Human";
 import Town from "./screens/Town";
 import Model from "./screens/Model";
 import Contact from "./screens/Contact";
-import Impressum from "./screens/Impressum";
+import Impressum from "./screens/impressum";
+import Credits from "./screens/Credits";
 
 const Drawer = createDrawerNavigator();
 
@@ -34,6 +35,7 @@ export default function App() {
         <Drawer.Screen name="Model" component={Model} />
         <Drawer.Screen name="Contact" component={Contact} />
         <Drawer.Screen name="Impressum" component={Impressum} />
+        <Drawer.Screen name="Credits" component={Credits} />
       </Drawer.Navigator>
     </NavigationContainer>
   );

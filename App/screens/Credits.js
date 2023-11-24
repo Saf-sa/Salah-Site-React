@@ -1,18 +1,18 @@
 import { View, Text, StyleSheet } from "react-native";
 import React from "react";
 
-const Impressum = () => {
+const Credits = () => {
   return (
-    <View style={styles.impressum}>
-      <Text style={styles.title}>Impressum Screen</Text>
+    <View style={styles.credits}>
+      <Text style={styles.title}>Credits Screen</Text>
     </View>
   );
 };
 
-export default Impressum;
+export default Credits;
 
 const styles = StyleSheet.create({
-  impressum: {
+  credits: {
     fontSize: 30,
     flex: 1,
     alignItems: "center",

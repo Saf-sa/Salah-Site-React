@@ -1,19 +1,12 @@
-import { View, Button, Image } from 'react-native'
+import { View,StyleSheet, Button, Image } from 'react-native'
 import React from 'react'
 
 
 
 const Photo = ({ navigation }) => {
   return (
-    <View
-      style={{
-        fontSize: 30,
-        flex: 1,
-        alignItems: "center",
-        justifyContent: "center",
-        backgroundColor: "lightblue",
-      }}
-    >
+    <View style={styles.photoGallery}>
+      
       <Button
         title=" Music Gallery"
         onPress={() => navigation.navigate("Music")}
@@ -64,3 +57,20 @@ const Photo = ({ navigation }) => {
 };
 
 export default Photo;
+
+const styles = StyleSheet.create({
+  photoGallery: {
+    flex: 1,
+    paddingTop: 40,
+    backgroundColor: "black",
+    alignItems: "center",
+    
+  },
+
+  title: {
+    marginTop: 40,
+    fontSize: 30,
+    fontSize: 30,
+    color: "white",
+  },
+});

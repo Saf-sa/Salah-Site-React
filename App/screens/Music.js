@@ -22,6 +22,11 @@ const Music = ({navigation}) => {
 export default Music
 
 const styles = StyleSheet.create({
+  Music: {
+    flex: 1,
+    backgroundColor: "black",
+    alignItems: "center",
+  },
   musicGallery: {
     flex: 1,
     backgroundColor: "black",
@@ -34,5 +39,6 @@ const styles = StyleSheet.create({
     fontSize: 30,
     color: "white",
   },
+
  
 });

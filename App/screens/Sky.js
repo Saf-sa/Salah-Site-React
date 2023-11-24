@@ -1,9 +1,9 @@
 import { View, Text, StyleSheet, Button } from "react-native";
 import React from 'react'
 
-const Sky = ()=>  {
+const Sky = ({ navigation }) => {
   return (
-   <View style={styles.skyGallery}>
+    <View style={styles.skyGallery}>
       <Button
         title=" Back to Photo Gallery"
         onPress={() => navigation.navigate("Photo")}

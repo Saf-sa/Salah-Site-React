@@ -21,11 +21,6 @@ const Gaya = ({ navigation }) => {
 export default Gaya
 
 const styles = StyleSheet.create({
-  Gaya: {
-    flex: 1,
-    backgroundColor: "black",
-    alignItems: "center",
-  },
   gayaGallery: {
     flex: 1,
     backgroundColor: "black",
@@ -33,8 +28,8 @@ const styles = StyleSheet.create({
   },
 
   title: {
-    marginTop: 20,
-    fontSize: 30,
+    marginTop: 30,
+    marginBottom: 30,
     fontSize: 30,
     color: "white",
   },

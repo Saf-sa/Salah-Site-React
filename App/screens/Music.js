@@ -11,7 +11,7 @@ const Music = ({navigation}) => {
         onPress={() => navigation.navigate("Photo")}
       />
 
-      <Text style={styles.title}>Music Gallery</Text>
+      <Text style={styles.title}>Sky Gallery</Text>
       <Button
         title=" Back to Photo Gallery"
         onPress={() => navigation.navigate("Photo")}
@@ -19,14 +19,11 @@ const Music = ({navigation}) => {
     </View>
   );
 };
+
 export default Music
 
 const styles = StyleSheet.create({
-  Music: {
-    flex: 1,
-    backgroundColor: "black",
-    alignItems: "center",
-  },
+
   musicGallery: {
     flex: 1,
     backgroundColor: "black",
@@ -34,7 +31,8 @@ const styles = StyleSheet.create({
   },
 
   title: {
-    marginTop: 20,
+    marginTop: 30,
+    marginBottom: 30,
     fontSize: 30,
     fontSize: 30,
     color: "white",

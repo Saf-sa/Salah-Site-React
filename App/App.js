@@ -18,6 +18,7 @@ import Human from "./screens/Human";
 import Town from "./screens/Town";
 import Model from "./screens/Model";
 import Contact from "./screens/Contact";
+import Impressum from "./screens/Impressum";
 
 const Drawer = createDrawerNavigator();
 
@@ -30,14 +31,9 @@ export default function App() {
         <Drawer.Screen name="Piano" component={Piano} />
         <Drawer.Screen name="Film" component={Film} />
         <Drawer.Screen name="Photo" component={Photo} />
-        <Drawer.Screen name="Music" component={Music} />
-        <Drawer.Screen name="Sport" component={Sport} />
-        <Drawer.Screen name="Gaya" component={Gaya} />
-        <Drawer.Screen name="Sky" component={Sky} />
-        <Drawer.Screen name="Human" component={Human} />
-        <Drawer.Screen name="Town" component={Town} />
         <Drawer.Screen name="Model" component={Model} />
         <Drawer.Screen name="Contact" component={Contact} />
+        <Drawer.Screen name="Impressum" component={Impressum} />
       </Drawer.Navigator>
     </NavigationContainer>
   );

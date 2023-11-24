@@ -14,7 +14,7 @@ const Home = () => {
         alignItems: "center",
         justifyContent: "center",
         backgroundColor: "blue",
-        fontSize: 30,
+        
       }}
     >
       <Text style={styles.title}>Home Screen</Text>

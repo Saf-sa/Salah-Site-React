@@ -33,3 +33,8 @@ npx expo install react-native-gesture-handler
 
 npm install @react-navigation/drawer
 
+
+9- install react native animated
+
+npm i react-native-reanimated
+

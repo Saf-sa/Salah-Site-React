@@ -2,8 +2,17 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, Button } from "react-native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
-import { createDrawerNavigator } from "@react-navigation/drawer";
+import {
+  createDrawerNavigator,
+  DrawerContentScrollView,
+  DrawerItemList,
+  DrawerItem,
+  useDrawerProgress,
+} from "@react-navigation/drawer";
+import Animated from "react-native-reanimated";
 import { Navigation } from "@react-navigation/native";
+
+
 import React from "react";
 import Home from "./screens/Home";
 import About from "./screens/About";
@@ -21,12 +30,50 @@ import Contact from "./screens/Contact";
 import Impressum from "./screens/impressum";
 import Credits from "./screens/Credits";
 
+
+function Feed() {
+  return (
+    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+      <Text>Feed Screen</Text>
+    </View>
+  );
+}
+
+function Article() {
+  return (
+    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+      <Text>Article Screen</Text>
+    </View>
+  );
+}
+
+function CustomDrawerContent(props) {
+  const progress = useDrawerProgress();
+
+  const translateX = Animated.interpolate(progress, {
+    inputRange: [0, 1],
+    outputRange: [-100, 0],
+  });
+
+  return (
+    <DrawerContentScrollView {...props}>
+      <Animated.View style={{ transform: [{ translateX }] }}>
+        <DrawerItemList {...props} />
+        <DrawerItem label="Help" onPress={() => alert("Link to help")} />
+      </Animated.View>
+    </DrawerContentScrollView>
+  );
+}
+
 const Drawer = createDrawerNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Drawer.Navigator initialRouteName="Home">
+      <Drawer.Navigator
+        style={styles.NavigationContainer}
+        initialRouteName="Home"
+      >
         <Drawer.Screen name="Home" component={Home} />
         <Drawer.Screen name="About" component={About} />
         <Drawer.Screen name="Piano" component={Piano} />
@@ -40,3 +87,4 @@ export default function App() {
     </NavigationContainer>
   );
 }
+

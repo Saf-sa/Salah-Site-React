@@ -3,7 +3,7 @@ import React from "react";
 
 const Impressum = () => {
   return (
-    <View style={styles.impressum}>
+    <View style={styles.Impressum}>
       <Text style={styles.title}>Impressum Screen</Text>
     </View>
   );
@@ -12,7 +12,7 @@ const Impressum = () => {
 export default Impressum;
 
 const styles = StyleSheet.create({
-  impressum: {
+  Impressum: {
     fontSize: 30,
     flex: 1,
     alignItems: "center",

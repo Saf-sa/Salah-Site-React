@@ -1,5 +1,6 @@
 # Salah-Site-React Native App IOS
 ![Capture d’écran 2024-02-27 à 12 28 35](https://github.com/Saf-sa/Salah-Site-React-Native/assets/120387600/4154ebda-7ddd-49fa-ad3a-fcd7542cadb3)
+![Capture d’écran 2024-02-27 à 12 28 58](https://github.com/Saf-sa/Salah-Site-React-Native/assets/120387600/db98a55d-47cc-4186-97dc-636d5a93a2e3)
 
 
 first instal Xcode IOS globaly
